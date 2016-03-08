@@ -1,0 +1,162 @@
+/*
+ 	(extracted from:)
+
+	Solid State by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/*
+* #2e3141 //Solid state, bg
+* #E8ECED //Solid state, bg-alt
+*
+* #ffffff //text-over-bg
+* #36394A //text-over-bg-alt
+*/
+
+body {
+    background-color: #2e3141;
+    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../img/bg.jpg");
+    background-size: auto, cover;
+    background-attachment: fixed, fixed;
+    background-position: center, center;
+}
+
+.wrapper {
+    background-color: #E8ECED;
+    color: #36394A;
+    margin: 6.5em 0;
+    position: relative;
+}
+
+.wrapper.alt {
+    background-color: #2e3141;
+    color: #ffffff;
+}
+
+.wrapper:before,
+.wrapper:after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%23E8ECED;' /%3E%3C/svg%3E");
+}
+
+.wrapper.alt:before,
+.wrapper.alt:after {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpolygon points='0,100 100,0 100,100' style='fill:%232e3141;' /%3E%3C/svg%3E");
+}
+
+.wrapper:before,
+.wrapper:after {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: '';
+    display: block;
+    height: 6.5em;
+    position: absolute;
+    width: 100%;
+}
+
+.wrapper:before {
+    left: 0;
+    top: -6.5em;
+}
+
+.wrapper:after {
+    -moz-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    -ms-transform: scaleY(-1);
+    transform: scaleY(-1);
+    bottom: -6.5em;
+    left: 0;
+}
+
+.wrapper.alt:before {
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.wrapper.alt:after {
+    -moz-transform: scaleY(-1) scaleX(-1);
+    -webkit-transform: scaleY(-1) scaleX(-1);
+    -ms-transform: scaleY(-1) scaleX(-1);
+    transform: scaleY(-1) scaleX(-1);
+}
+
+@media screen and (max-width: 980px) {
+    .wrapper {
+        margin: 4.75em 0;
+    }
+    .wrapper:before,
+    .wrapper:after {
+        height: 4.75em;
+    }
+    .wrapper:before {
+        top: -4.75em;
+    }
+    .wrapper:after {
+        bottom: -4.75em;
+        left: 0;
+    }
+    .wrapper .inner {
+        padding: 3em 3em 1em 3em;
+        width: 100%;
+    }
+    .wrapper.spotlight .image {
+        margin: 0 2em 2em 0;
+        width: 32em;
+    }
+    .wrapper.spotlight:nth-child(2n - 1) .image {
+        margin: 0 0 2em 2em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .wrapper {
+        margin: 2.5em 0;
+    }
+    .wrapper:before,
+    .wrapper:after {
+        height: 2.5em;
+    }
+    .wrapper:before {
+        top: -2.5em;
+    }
+    .wrapper:after {
+        bottom: -2.5em;
+        left: 0;
+    }
+    .wrapper .inner {
+        padding: 2em 2em 0.1em 2em;
+    }
+    .wrapper.spotlight .inner {
+        -moz-align-items: -moz-flex-start;
+        -webkit-align-items: -webkit-flex-start;
+        -ms-align-items: -ms-flex-start;
+        align-items: flex-start;
+    }
+    .wrapper.spotlight .image {
+        width: 19em;
+        margin: 0 1.75em 2em 0;
+    }
+    .wrapper.spotlight:nth-child(2n - 1) .image {
+        margin: 0 0 2em 1.75em;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .wrapper.spotlight .inner {
+        display: block;
+    }
+    .wrapper.spotlight .image {
+        margin: 0 0 1em 0 !important;
+        max-width: 85%;
+        width: 12em;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .wrapper .inner {
+        padding: 2em 1.5em 0.1em 1.5em;
+    }
+}
