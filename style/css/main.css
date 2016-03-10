@@ -5,3 +5,46 @@
 * #ffffff //text-over-bg
 * #36394A //text-over-bg-alt
 */
+
+
+* {
+	/*
+    color: #ffffff;
+    font-family: Raleway, Helvetica, sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    */
+    /*margin: 0 0 1em 0;*/ /*CAUTION: BREAKS EVERYTHING*/
+    /*
+    text-transform: uppercase;
+    */
+}
+
+/* CAUTION: BREAKS NAV */
+/*
+nav a, nav span {
+	text-transform: none; 
+}
+*/
+
+header {
+    margin-top: 51px;
+    color: #ffffff;
+}
+
+header p {
+	font-family: Raleway, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: 200;
+	letter-spacing: 0.1em;
+	line-height: 2;
+	text-transform: uppercase;	
+}
+
+/*
+ 	(extracted from:)
+
+	Solid State by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
